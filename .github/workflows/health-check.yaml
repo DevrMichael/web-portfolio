@@ -26,7 +26,7 @@ jobs:
         run: npx lerna run lint --since origin/${{ github.event.pull_request.base.ref }} -- --max-warnings=0
 
       - name: Test
-        run: npx lerna run test --since origin/${{ github.event.pull_request.base.ref }}
+        run: npx lerna run test --since origin/${{ github.event.pull_request.base.ref }} -- --passWithNoTests
 
       - name: Build
         run: npx lerna run build --since origin/${{ github.event.pull_request.base.ref }}
