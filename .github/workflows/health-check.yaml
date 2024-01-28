@@ -1,0 +1,32 @@
+name: Health check
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npx lerna run lint --since origin/${{ github.event.pull_request.base.ref }} -- --max-warnings=0
+
+      - name: Test
+        run: npx lerna run test --since origin/${{ github.event.pull_request.base.ref }}
+
+      - name: Build
+        run: npx lerna run build --since origin/${{ github.event.pull_request.base.ref }}
