@@ -1,0 +1,1 @@
+web: npx http-server shared/components/storybook-static/ -p $PORT

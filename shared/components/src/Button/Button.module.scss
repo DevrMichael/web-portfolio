@@ -1,0 +1,77 @@
+// @import '@skiwo/styles/global/variables.scss';
+// @import 'bootstrap/scss/functions';
+// @import 'bootstrap/scss/variables';
+// @import 'bootstrap/scss/mixins';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  font-weight: 500;
+
+  // &[disabled] {
+  //   @include button-variant($secondary-300, $secondary-300);
+  //   color: $secondary-500;
+  // }
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.small,
+  &.medium {
+    font-size: 0.875rem;
+    span {
+      line-height: 0.875rem;
+    }
+  }
+
+  &.large,
+  &.x-large {
+    font-size: 1rem;
+    span {
+      line-height: 1rem;
+    }
+  }
+
+  .spinner {
+    margin-right: 0.5rem;
+  }
+
+  .icon {
+    &.left {
+      margin-right: 0.5rem;
+    }
+
+    &.right {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &.small {
+    padding: 0.25rem 0.5rem;
+
+    .icon {
+      &.left {
+        margin-right: 0.25rem;
+      }
+
+      &.right {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  &.medium {
+    padding: 0.5rem 0.75rem;
+  }
+
+  &.large {
+    padding: 0.625rem 1.25rem;
+  }
+
+  &.x-large {
+    padding: 0.875rem 1.25rem;
+  }
+}

@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+.button.fullWidth {
+  width: 100%;
+}
+.button.small, .button.medium {
+  font-size: 0.875rem;
+}
+.button.small span, .button.medium span {
+  line-height: 0.875rem;
+}
+.button.large, .button.x-large {
+  font-size: 1rem;
+}
+.button.large span, .button.x-large span {
+  line-height: 1rem;
+}
+.button .spinner {
+  margin-right: 0.5rem;
+}
+.button .icon.left {
+  margin-right: 0.5rem;
+}
+.button .icon.right {
+  margin-left: 0.5rem;
+}
+.button.small {
+  padding: 0.25rem 0.5rem;
+}
+.button.small .icon.left {
+  margin-right: 0.25rem;
+}
+.button.small .icon.right {
+  margin-left: 0.25rem;
+}
+.button.medium {
+  padding: 0.5rem 0.75rem;
+}
+.button.large {
+  padding: 0.625rem 1.25rem;
+}
+.button.x-large {
+  padding: 0.875rem 1.25rem;
+}/*# sourceMappingURL=Button.module.css.map */
