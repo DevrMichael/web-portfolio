@@ -1,13 +1,73 @@
 @import '@web-portfolio/styles/global/colours.scss';
 
-.buttonContainer {
-  background-color: $error-600;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 100%;
+.container {
+  .submitButtonContainer {
+    button {
+      background-color: $secondary-900;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      font-weight: 400;
+    }
 
-  .forgotPassword {
-    padding-right: 0;
+    .forgotPassword {
+      padding-right: 0;
+    }
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $secondary-900;
+    line-height: normal;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $secondary-400;
+    margin: 0;
+  }
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $secondary-900;
+  }
+
+  .textfieldInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.88rem;
+
+    .checkBox {
+      input {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+      label {
+        vertical-align: middle;
+        font-size: 1rem;
+        color: $secondary-900;
+      }
+    }
+
+    .inputButtons {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        font-size: 0.875rem;
+        color: $secondary-900;
+        padding: 0;
+
+        :hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
