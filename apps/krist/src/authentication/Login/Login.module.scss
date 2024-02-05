@@ -1,4 +1,7 @@
+@import '@web-portfolio/styles/global/colours.scss';
+
 .buttonContainer {
+  background-color: $error-600;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
