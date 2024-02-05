@@ -1,0 +1,50 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.form {
+  padding: 2rem;
+  background-color: $white;
+  border-radius: $border-radius-lg;
+
+  @include media-breakpoint-down(sm) {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    margin-top: 3rem;
+
+    & > :not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    & > :not(:first-child) {
+      margin-left: 3.5rem;
+    }
+
+    .heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .illustration {
+      width: 6rem;
+      height: 6rem;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  .description {
+    color: 'black';
+    font-weight: $form-text-font-weight;
+    font-size: 1.125rem;
+  }
+}

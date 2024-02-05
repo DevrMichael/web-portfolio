@@ -1,0 +1,42 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: 'black';
+
+  .row {
+    height: 100%;
+  }
+
+  .imageView {
+    padding: 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    .heroImage {
+      width: 100%;
+      height: 100%;
+      background-image: url('./auth-hero.png');
+      background-size: cover;
+    }
+  }
+
+  .formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formContent {
+      max-width: 31rem;
+      border-radius: $border-radius-lg;
+      box-shadow:
+        0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+        0px 2px 4px -2px rgba(16, 24, 40, 0.1);
+    }
+  }
+}
