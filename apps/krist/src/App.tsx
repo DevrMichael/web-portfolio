@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Login } from './authentication';
+import { Login, ForgotPassword } from './authentication';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Login />} />
         <Route path={'/login'} element={<Login />} />
+        <Route path={'/forgot-password'} element={<ForgotPassword />} />
       </Routes>
     </>
   );
