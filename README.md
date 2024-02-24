@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# Monorepo for Multiple Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This monorepo is designed to house multiple projects, providing a centralized location for development, testing, and deployment processes. Leveraging [Create React App](https://github.com/facebook/create-react-app) for React-based projects, it incorporates a suite of tools and libraries to ensure high-quality development standards and a streamlined setup.
 
-## Available Scripts
+## Monorepo Structure
 
-In the project directory, you can run:
+Organized into subdirectories, each representing a standalone project, this repository simplifies dependency management, code sharing, and project orchestration.
 
-### `npm start`
+### Projects Included
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `Krist`: Login pages for clothing store
+- `Storybook`: Shared custom component library
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![monorepo-readme](https://github.com/DevrMichael/web-portfolio/assets/88589247/ec4717cb-de54-48f7-a4f9-6291d3b5df72)
+![monorepo-storybook](https://github.com/DevrMichael/web-portfolio/assets/88589247/9118cdb5-1efd-4c23-b39f-055c84d65e10)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Technologies and Tools
 
-### `npm run build`
+- **[Lerna](https://lerna.js.org/)**: Used for managing JavaScript projects with multiple packages, simplifying the process of handling dependencies across these packages.
+- **[Bootstrap](https://getbootstrap.com/)**: Integrated for responsive design and pre-styled components, enhancing UI development.
+- **[Prettier](https://prettier.io/)**: An opinionated code formatter, ensuring consistent code style across all projects.
+- **[ESLint](https://eslint.org/)**: Utilized for identifying and reporting on patterns found in ECMAScript/JavaScript code, helping to maintain code quality.
+- **[Formik](https://formik.org/)**: Implemented for building forms in React, providing an easy way to manage form state.
+- **[Yup](https://github.com/jquense/yup)**: Used in conjunction with Formik for object schema validation, enhancing form validation processes.
+- **[Storybook](https://storybook.js.org/)**: A tool for developing UI components in isolation, making it easier to build and document component libraries.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository and navigate into the project directory of interest:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+    git clone https://github.com/DevrMichael/web-portfolio.git
+```
+### Prerequisites
 
-### `npm run eject`
+Ensure you have [Node.js](https://nodejs.org/) installed to use `npm` commands.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Common Commands
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Below are commands available across all projects within the monorepo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### `npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Runs the selected app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload with edits, and lint errors will be shown in the console.
+
+#### `npm test`
+
+Initiates the test runner in interactive watch mode. See the [running tests](https://facebook.github.io/create-react-app/docs/running-tests) documentation for more details.
+
+#### `npm run build`
+
+Builds the app for production to the `build` folder. It's optimized for performance, with minified builds and hashed filenames. Ready for deployment!
+
+#### `npm run eject`
+
+**Note: this is irreversible.** Ejects the build setup, copying all configuration files and dependencies into your project for full control.
+
+### Deployment
+
+For deployment strategies, refer to the [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment).
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For a deeper understanding of the technologies used:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React documentation](https://reactjs.org/)
+
+## Contributing
+
+Contributions are welcome! Please read our contributing guidelines for our code of conduct and the process for submitting pull requests.
+
+## License
+
+Licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
