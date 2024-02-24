@@ -60,4 +60,4 @@ Contributions to the monorepo are welcome! Please read our contributing guidelin
 
 ## License
 
-This monorepo is licensed under the MIT License - see the LICENSE file for details.
+This monorepo is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
