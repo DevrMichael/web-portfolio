@@ -17,13 +17,10 @@ const config: StorybookConfig = {
     options: {},
   },
   babel: async (options) => ({
-    // Update your babel configuration here
     ...options,
   }),
 
   webpackFinal: async (config, { configType }) => {
-    // Make whatever fine-grained changes you need
-    // Return the altered config
     return config;
   },
 };

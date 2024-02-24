@@ -12,7 +12,6 @@ const preview: Preview = {
           borderRadius: '0.25rem',
         }}
       >
-        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
         <Story />
       </div>
     ),
