@@ -5,7 +5,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import TextField from './TextField';
 
 export default {
-  title: 'Skiwo/TextField',
+  title: 'WebPortfolio/TextField',
   component: TextField,
   parameters: {
     controls: {

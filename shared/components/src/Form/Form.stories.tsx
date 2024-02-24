@@ -6,7 +6,7 @@ import TextField from '../TextField/TextField';
 import Form from './Form';
 
 export default {
-  title: 'Skiwo/Form',
+  title: 'WebPortfolio/Form',
   component: Form,
   parameters: {
     controls: {

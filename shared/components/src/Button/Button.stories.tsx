@@ -5,7 +5,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Button from './Button';
 
 export default {
-  title: 'Skiwo/Button',
+  title: 'WebPortfolio/Button',
   component: Button,
   parameters: {
     controls: {
